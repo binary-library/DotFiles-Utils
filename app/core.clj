@@ -1,12 +1,8 @@
 #!/usr/bin/env dad
 
-(print "Core-shit")
-(print GIT-REPOS-DIR)
+(def core-libs
+  {:fzf {:desc "A general-purpose command-line fuzzy finder."}
+   :direnv {:desc "automatic env sourcing https://direnv.net/"}})
 
-;; (package
-;;  [;; "A general-purpose command-line fuzzy finder."
-;;   "fzf"
-;;   ;; automatic env sourcing https://direnv.net/
-;;   "direnv"
-;;   "rlwrap"
-;;   "aspell"])
+(info "Core-shit")
+

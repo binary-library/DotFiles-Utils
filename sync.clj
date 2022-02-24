@@ -1,11 +1,20 @@
-(load-file "utils.clj")
-;;vi (load-file "app/core.clj")
+;; (package "libgccjit")
+;; (execute "which brew > brew-out.txt")
+;; (execute "brew reinstall libgccjit")
+;; (execute "brew config -dv > brew-cfg.txt")
+(execute "env | sort > env-dump.txt")
+;; (load-file "utils.clj")
+;; (debug "loaded utils.clj")
 
-(def profile
-  (merge
-   (renvs
-    :full-name :email)
-   (envs
-    {})))
+;; (def profile
+;;   (merge
+;;    (renv
+;;     ;; All the required environment variables
+;;     :full-name :email)
+;;    (env
+;;     ;; Environment variables with sane defaults
+;;     )))
 
-(info profile)
+;; (info "Profile:" profile)
+;; (info (path-join "a" "b"))
+;; (load-file "app/emacs.clj")
